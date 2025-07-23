@@ -53,6 +53,13 @@ body {
     color: rgb(231, 153, 166);
 }
 
+.Sobre-mi{
+color: #de638c;
+}
+
+
+
+
 
 * {
     box-sizing: border-box;
@@ -95,6 +102,21 @@ body {
   height: auto;
   object-fit: cover;
   border-radius: 10px;
+}
+.sobre-mi {
+  background-color: #f8c4d9;
+  color: #9f2d56;
+  padding: 30px;
+  margin: 30px auto;
+  max-width: 800px;
+  border-radius: 15px;
+  font-family: sans-serif;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.sobre-mi h2 {
+  color: #c7155d;
+  margin-bottom: 15px;
 }
 
 
