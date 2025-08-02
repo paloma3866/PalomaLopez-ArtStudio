@@ -1,0 +1,10 @@
+//base
+
+@use "./base/reset";
+@use "./base/tipografia";
+
+//components
+
+@use "./partials/components/navbar";
+@use "./partials/components/body";
+@use "./partials/components/footer";

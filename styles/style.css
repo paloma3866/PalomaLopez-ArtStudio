@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navegar ol {
+  display: flex;
+  background-color: #de638c;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+}
+
+.navegar ol li {
+  margin-right: 20px;
+}
+
+.navegar ol li:last-child {
+  margin-right: 0;
+}
+
+.navegar ol li a {
+  padding: 5px 10px;
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+  nav ol {
+    flex-direction: column;
+    align-items: center;
+  }
+  nav ol li {
+    margin-bottom: 10px;
+  }
+}
+.TituloPrincipal {
+  background-color: #f1adc4;
+  color: rgb(209, 114, 129) !important;
+  font-size: 80px !important;
+  margin-top: 100px;
+  margin-left: 0px;
+  text-decoration: underline;
+  font-family: cursive;
+}
+
+body {
+  background-color: rgba(39, 59, 31, 0.705);
+}
+
+.comunicar {
+  padding: 0px;
+  margin: 0 10px;
+  color: rgb(231, 153, 166);
+}
+
+.pedir {
+  color: rgb(231, 153, 166);
+}
+
+.imagenes {
+  color: rgb(231, 153, 166);
+}
+
+.Sobre-mi {
+  color: #de638c;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.Contenido {
+  display: flex;
+  background-color: #de638c;
+  padding: 10px;
+  margin: 15px;
+  justify-content: center;
+}
+
+.Contenido img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.Contenido {
+  background-color: #de638c;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Contenido img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.sobre-mi {
+  background-color: #f8c4d9;
+  color: #9f2d56;
+  padding: 30px;
+  margin: 30px auto;
+  max-width: 800px;
+  border-radius: 15px;
+  font-family: sans-serif;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sobre-mi h2 {
+  color: #c7155d;
+  margin-bottom: 15px;
+}
+
+/* ----------- Estilos adaptados a Tabletas----------- */
+@media screen and (max-width: 1024px) {
+  .TituloPrincipal {
+    font-size: 60px;
+    margin-left: 20px;
+  }
+  .galeria {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+  }
+  .Contenido {
+    padding: 8px;
+  }
+}
+/* ----------- Estilos adaptados a Celular ----------- */
+@media screen and (max-width: 600px) {
+  .TituloPrincipal {
+    font-size: 40px;
+    margin-left: 10px;
+  }
+  .galeria {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .Contenido {
+    padding: 6px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

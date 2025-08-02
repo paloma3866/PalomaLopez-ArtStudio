@@ -1,0 +1,39 @@
+.navegar ol {
+  display: flex;
+  background-color: #de638c;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+}
+
+.navegar ol li {
+  margin-right: 20px;
+}
+
+.navegar ol li:last-child {
+  margin-right: 0;
+}
+
+.navegar ol li a {
+  padding: 5px 10px;
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 600px){
+
+nav ol {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ol li {
+    margin-bottom: 10px;
+  }
+
+
+
+
+}
