@@ -1,3 +1,16 @@
+@keyframes aparecerSuave {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
 .TituloPrincipal {
     background-color: #f1adc4;
   color: rgb(209, 114, 129) !important;
@@ -6,6 +19,13 @@
   margin-left: 0px;
   text-decoration: underline;
   font-family: cursive;
+
+
+  font-size: 50px;
+  margin: 20px;
+  animation: aparecerSuave 1s ease-out;
+
+
 }
 
 
