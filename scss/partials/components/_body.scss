@@ -13,8 +13,8 @@
 
 .titulo-principal {
     background-color: #f1adc4;
-  color: rgb(209, 114, 129) !important;
-  font-size: 80px !important;
+  color: rgb(209, 114, 129);
+  font-size: 80px;
   margin-top: 100px;
   margin-left: 0px;
   text-decoration: underline;
@@ -39,10 +39,9 @@ body {
     color: rgb(231, 153, 166);
 }
 
-.sobre-mi{
-color: #de638c;
 
-}
+
+
 
 
 
@@ -96,7 +95,8 @@ color: #de638c;
   }
 }
 
-.sobre-mi-container {
+
+  .sobre-mi-container {
   display: flex;
   align-items: flex-start;
   gap: 20px;
@@ -110,11 +110,22 @@ color: #de638c;
   }
 
   .sobre-mi-texto {
-    flex: 1; // ocupa el espacio restante
-    font-family: sans-serif;
+    flex: 1; 
+    font-family: 'Poppins', sans-serif; // tu fuente importada
     line-height: 1.6;
+    background-color: #fff; 
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    color: #9f2d56; // color texto
+
+    p {
+      margin-bottom: 1rem;
+      color: inherit; // hereda el color del div padre
+    }
   }
 }
+
 
 /* ----------- Responsive ----------- */
 @media screen and (max-width: 768px) {
@@ -134,16 +145,16 @@ color: #de638c;
 
     .sobre-mi-texto {
       flex: 1;
-      background-color: #fff; // fondo blanco
+      background-color: #fff; 
       padding: 20px;
       border-radius: 12px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      font-family: 'Poppins', sans-serif; // fuente
-      color: #9f2d56; // color texto
+      font-family: 'Poppins', sans-serif; 
+      color: #9f2d56; 
       line-height: 1.6;
 
       p {
-        margin-bottom: 1rem; // para separar párrafos
+        margin-bottom: 1rem; 
       }
     }
   }

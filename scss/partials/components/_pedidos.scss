@@ -20,8 +20,6 @@
   }
 }
 
-
-
 .pedidos {
   max-width: 600px;
   margin: 50px auto;
@@ -34,7 +32,7 @@
   h2 {
     text-align: center;
     margin-bottom: 20px;
-    color: $primary-color; // tu variable
+    color: $primary-color;
   }
 
   .form-group {
@@ -45,6 +43,7 @@
     label {
       margin-bottom: 5px;
       font-weight: bold;
+      color: #333; // etiqueta visible
     }
 
     input,
@@ -55,6 +54,8 @@
       border-radius: 6px;
       font-size: 1rem;
       resize: vertical;
+      color: #000; // texto dentro del input/textarea
+      background-color: #fff; // opcional, asegura contraste
     }
 
     input:focus,
