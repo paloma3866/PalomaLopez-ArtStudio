@@ -1,0 +1,44 @@
+.intro {
+  padding: 50px 20px;
+  text-align: center;
+
+  /* Animación de entrada */
+  animation: fadeInIntro 1s ease-in-out;
+}
+
+.intro-img {
+    width: 70%;      // agranda la imagen
+    max-width: 700px; // limita el tamaño en pantallas grandes
+    margin-top: 30px;
+    border-radius: 10px; 
+  }
+
+  @media (max-width: 768px) {
+    .intro-img {
+      width: 90%;    // responsive, ocupa más espacio en móvil
+    }
+  }
+
+
+  .subtitulo {
+    color: $primary-color;
+    font-family: $font-main;
+    @include responsive-text(2.5rem, 1.8rem);
+    margin-bottom: 20px;
+  }
+
+  .parrafosub {
+    color: #333;
+    font-family: $font-main;
+    @include responsive-text(1.2rem, 1rem);
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+
+// Animaciones
+@keyframes fadeInIntro {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}

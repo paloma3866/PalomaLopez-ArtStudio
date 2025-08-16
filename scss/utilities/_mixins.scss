@@ -1,0 +1,10 @@
+// mixins.scss
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin responsive-text($desktop, $mobile) {
+  font-size: $desktop;
+}
