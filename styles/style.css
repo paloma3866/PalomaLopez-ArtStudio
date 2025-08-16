@@ -400,6 +400,8 @@ body {
   font-weight: bold;
   border-radius: 6px;
   margin-bottom: 5px;
+  color: #333;
+  font-family: "Poppins", sans-serif;
 }
 
 .accordion-content {
@@ -409,6 +411,8 @@ body {
   padding: 0 20px;
   background-color: #f9f9f9;
   border-radius: 6px;
+  color: #333;
+  font-family: "Poppins", sans-serif;
 }
 
 .accordion-item.active .accordion-content {
