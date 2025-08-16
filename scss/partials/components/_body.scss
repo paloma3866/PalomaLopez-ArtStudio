@@ -111,17 +111,17 @@ body {
 
   .sobre-mi-texto {
     flex: 1; 
-    font-family: 'Poppins', sans-serif; // tu fuente importada
+    font-family: 'Poppins', sans-serif; 
     line-height: 1.6;
     background-color: #fff; 
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    color: #9f2d56; // color texto
+    color: #9f2d56; 
 
     p {
       margin-bottom: 1rem;
-      color: inherit; // hereda el color del div padre
+      color: inherit; 
     }
   }
 }
