@@ -1,15 +1,22 @@
-.form-contacto, .faq {
+// _contacto.scss
+
+@use '../../utilities/variables' as v;
+@use '../../utilities/mixins' as m;
+
+.form-contacto,
+.faq {
   max-width: 600px;
   margin: 30px auto;
   padding: 20px;
   background-color: #fafafa;
   border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  font-family: $font-main; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: v.$font-main;
 
-  h2, h3 {
+  h2,
+  h3 {
     text-align: center;
-    color: $primary-color;
+    color: v.$primary-color;
     margin-bottom: 20px;
   }
 
@@ -21,26 +28,29 @@
     label {
       font-weight: bold;
       margin-bottom: 5px;
-      color: #333; 
+      color: #333;
     }
 
-    input, textarea {
+    input,
+    textarea {
       padding: 10px;
       border: 1px solid #ccc;
       border-radius: 6px;
-      color: #333; 
-      background-color: #fff; 
+      color: #333;
+      background-color: #fff;
       font-family: inherit;
     }
 
-    input::placeholder, textarea::placeholder {
-      color: #aaa; 
+    input::placeholder,
+    textarea::placeholder {
+      color: #aaa;
     }
 
-    input:focus, textarea:focus {
+    input:focus,
+    textarea:focus {
       outline: none;
-      border-color: $primary-color;
-      box-shadow: 0 0 5px rgba($primary-color, 0.5);
+      border-color: v.$primary-color;
+      box-shadow: 0 0 5px rgba(v.$primary-color, 0.5);
     }
   }
 
@@ -48,15 +58,15 @@
     display: block;
     width: 100%;
     padding: 12px;
-    background-color: $primary-color;
+    background-color: v.$primary-color;
     color: #fff;
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color v.$transition-speed;
 
     &:hover {
-      background-color: darken($primary-color, 10%);
+      background-color: darken(v.$primary-color, 10%);
     }
   }
 }
@@ -74,7 +84,7 @@
   font-weight: bold;
   border-radius: 6px;
   margin-bottom: 5px;
-  color: #333; 
+  color: #333;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -85,11 +95,11 @@
   padding: 0 20px;
   background-color: #f9f9f9;
   border-radius: 6px;
-  color: #333; 
+  color: #333;
   font-family: 'Poppins', sans-serif;
 }
 
 .accordion-item.active .accordion-content {
-  max-height: 500px; 
+  max-height: 500px;
   padding: 10px 20px;
 }

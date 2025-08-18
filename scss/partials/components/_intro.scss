@@ -1,3 +1,8 @@
+// _intro.scss
+
+@use '../../utilities/variables' as v;
+@use '../../utilities/mixins' as m;
+
 .intro {
   padding: 50px 20px;
   text-align: center;
@@ -7,37 +12,35 @@
 }
 
 .intro-img {
-    width: 70%;      
-    max-width: 700px; 
-    margin-top: 30px;
-    border-radius: 10px; 
+  width: 70%;
+  max-width: 700px;
+  margin-top: 30px;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .intro-img {
+    width: 90%;
   }
+}
 
-  @media (max-width: 768px) {
-    .intro-img {
-      width: 90%;    
-    }
-  }
+.subtitulo {
+  color: v.$primary-color;
+  font-family: v.$font-main;
+  @include m.responsive-text(2.5rem, 1.8rem);
+  margin-bottom: 20px;
+}
 
+.parrafosub {
+  color: #333;
+  font-family: v.$font-main;
+  @include m.responsive-text(1.2rem, 1rem);
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 0 auto;
+}
 
-  .subtitulo {
-    color: $primary-color;
-    font-family: $font-main;
-    @include responsive-text(2.5rem, 1.8rem);
-    margin-bottom: 20px;
-  }
-
-  .parrafosub {
-    color: #333;
-    font-family: $font-main;
-    @include responsive-text(1.2rem, 1rem);
-    line-height: 1.6;
-    max-width: 700px;
-    margin: 0 auto;
-  }
-
-
-// Animaciones
+/* Animaciones */
 @keyframes fadeInIntro {
   from { opacity: 0; transform: translateY(-20px); }
   to { opacity: 1; transform: translateY(0); }

@@ -1,3 +1,8 @@
+// _pedidos.scss
+
+@use '../../utilities/variables' as v;
+@use '../../utilities/mixins' as m;
+
 .pedidos-intro {
   text-align: center;
   margin-bottom: 30px;
@@ -5,7 +10,7 @@
   p {
     font-size: 1.1rem;
     margin-bottom: 15px;
-    color: $primary-color;
+    color: v.$primary-color;
   }
 
   .referencias-estilo {
@@ -32,7 +37,8 @@
   h2 {
     text-align: center;
     margin-bottom: 20px;
-    color: $primary-color;
+    color: v.$primary-color;
+    font-family: v.$font-main;
   }
 
   .form-group {
@@ -43,7 +49,8 @@
     label {
       margin-bottom: 5px;
       font-weight: bold;
-      color: #333; 
+      color: #333;
+      font-family: v.$font-main;
     }
 
     input,
@@ -54,16 +61,17 @@
       border-radius: 6px;
       font-size: 1rem;
       resize: vertical;
-      color: #000; 
-      background-color: #fff; 
+      color: #000;
+      background-color: #fff;
+      font-family: v.$font-main;
     }
 
     input:focus,
     select:focus,
     textarea:focus {
       outline: none;
-      border-color: $primary-color;
-      box-shadow: 0 0 5px rgba($primary-color, 0.5);
+      border-color: v.$primary-color;
+      box-shadow: 0 0 5px rgba(v.$primary-color, 0.5);
     }
   }
 
@@ -71,16 +79,16 @@
     display: block;
     width: 100%;
     padding: 12px;
-    background-color: $primary-color;
+    background-color: v.$primary-color;
     color: #fff;
     border: none;
     border-radius: 8px;
     font-size: 1.1rem;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color v.$transition-speed;
 
     &:hover {
-      background-color: darken($primary-color, 10%);
+      background-color: darken(v.$primary-color, 10%);
     }
   }
 

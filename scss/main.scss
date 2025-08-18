@@ -1,28 +1,19 @@
 
-//fuente utilizada en "sobre mi" 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+// Base
+@use 'base/reset';
+@use 'base/tipografia' as tip;
 
-body {
-  font-family: 'Poppins', sans-serif;
-  color: #fff; 
-}
+// Utilidades
+@use 'utilities/variables' as v;
+@use 'utilities/mixins' as m;
 
-// BASE
-@import './base/reset';
-@import './base/tipografia';
+// Componentes
+@use 'partials/components/navbar' as navbar;
+@use 'partials/components/body' as bodyComp;
+@use 'partials/components/intro' as intro;
+@use 'partials/components/pedidos' as pedidos;
+@use 'partials/components/contacto' as contacto;
 
-// UTILIDADES
-@import './utilities/variables';
-@import './utilities/mixins';
 
-// COMPONENTES
-@import './partials/components/navbar';
-@import './partials/components/body';
-@import './partials/components/intro';
-@import './partials/components/pedidos';
-@import './partials/components/contacto';
-@import './partials/components/footer';
-
-// ANIMACIONES
-@import './partials/animation';
-
+// Animaciones
+@use 'partials/animation' as anim;

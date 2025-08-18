@@ -1,0 +1,16 @@
+// Importado de Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+// Tipografía global
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #fff; 
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  line-height: 1.3;
+}
